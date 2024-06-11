@@ -52,3 +52,127 @@ Submit your document and GitHub repository link through the designated platform 
 - Adherence to submission guidelines and deadlines.
 
 Note: Feel free to reach out for clarification or assistance with any aspect of the assignment.
+
+MY DOCUMENT : NEEMA MWENDE
+1. Introduction
+This document outlines the steps taken to set up a development environment on Ubuntu, including installing necessary tools, configuring version control, setting up a database, and optimizing the IDE for development.
+
+2. Operating System
+Ubuntu - We used Ubuntu as our operating system for setting up the development environment.
+
+3. Text Editor/IDE - Visual Studio Code
+Steps to Install and Configure Visual Studio Code:
+   Update the package index:
+      sudo apt update
+   Install the required dependencies: 
+      sudo apt install software-properties-common apt-transport-https wget
+   Import the Microsoft GPG key: 
+      wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+   Enable the Visual Studio Code repository:
+      sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+   Install Visual Studio Code:
+      sudo apt update
+      sudo apt install code
+   Launch Visual Studio Code:
+      code
+
+4. Version Control System - Git
+Steps to Install and Configure Git:
+      Install Git:
+         sudo apt update
+         sudo apt install git
+      Configure Git:
+         git config --global user.name "Your Name"
+         git config --global user.email "your.email@example.com"
+
+
+Creating and Initializing a GitHub Repository:
+      Create a GitHub account:
+         Visit GitHub and sign up.
+      Create a new repository on GitHub:
+         Go to your GitHub profile, click on "Repositories," and then "New."
+      Clone the repository to your local machine:
+         git clone https://github.com/yourusername/your-repository.git
+         cd your-repository
+      Initialize a Git repository:
+         git init
+      Make your firsy Commit:
+         echo "# Your Project" >> README.md
+         git add README.md
+         git commit -m "Initial commit"
+         git push origin main
+
+5. Programming Languages and Runtimes - Python
+Steps to Install Python:
+
+      Install Python:
+         sudo apt update
+         sudo apt install python3 python3-pip
+      Verify the installation:
+         python3 --version
+         pip3 --version
+
+6. Package Managers - pip for Python
+Steps to Install pip:
+
+      Install pip:
+         sudo apt install python3-pip
+      Verify pip installation:
+         pip3 --version
+
+7. Database Configuration - MySQL
+Steps to Install MySQL:
+
+      Install MySQL:
+         sudo apt update
+         sudo apt install mysql-server
+      Secure the MySQL installation:
+         sudo mysql_secure_installation
+      Start the MYSQL service:
+         sudo systemctl start mysql
+         sudo systemctl enable mysql
+      Log into MYSQL: 
+         sudo mysql -u root -p
+
+8. Development Environments and Virtualization : Docker (Optional)
+Steps to Install Docker:
+
+      Install Docker:
+         sudo apt update
+         sudo apt install docker.io
+      Start and enable Docker:
+         sudo systemctl start docker
+         sudo systemctl enable docker
+      Verify Docker installation:
+         docker --version
+
+9. . Extensions and Plugins :  Visual Studio Code Extensions
+Steps to Install Extensions:
+
+      Open Visual Studio Code and navigate to the Extensions view:
+      Click the Extensions icon in the Activity Bar on the side of the window or press Ctrl+Shift+X.
+
+      Search for extensions:
+      For example, search for "Python" to install the Python extension.
+
+      Install the desired extensions:
+      Click the Install button next to the extension name.
+
+Essential Extensions:
+
+      Prettier: Code formatter.
+      ESLint: JavaScript/TypeScript linting.
+      Python: Python language support.
+      Docker: Docker integration.
+
+10. Challenges and Solutions
+Challenges Faced:
+
+      Git Configuration Issues:
+      Solution: Double-check the email and username configurations using git config --global --list and ensure they match the GitHub account.
+
+      MySQL Installation Problems:
+      Solution: Run sudo apt update before attempting installation and follow the prompts carefully during mysql_secure_installation.
+
+      Extension Compatibility:
+      Solution: Ensure that Visual Studio Code and the extensions are up to date to avoid compatibility issues.
