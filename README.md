@@ -176,3 +176,6 @@ Challenges Faced:
 
       Extension Compatibility:
       Solution: Ensure that Visual Studio Code and the extensions are up to date to avoid compatibility issues.
+
+11. My sample project: I attempted to create a dart simple project for taking in using details: 
+Here is the github Link for the sample project : https://github.com/NeemaMwende/dart.git
